@@ -22,7 +22,7 @@ log 'prepare datadisks'
 sudo bash prepare_vm_disks.sh >> $LOGFILE
 
 log 'download latest installer...'
-if curl --fail --silent --show-error "$installerDownloadUrl" --output /tmp/dt-mgd-install.sh ; then
+if curl -L --fail --silent --show-error "$installerDownloadUrl" --output /tmp/dt-mgd-install.sh ; then
     log 'done.'
 else
     log 'failed.'
