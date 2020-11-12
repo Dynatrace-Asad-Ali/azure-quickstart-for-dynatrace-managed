@@ -83,7 +83,7 @@
         "totalNodeInstanceCount": {
             "type": "int",
             "defaultValue": 3,
-            "minValue": 3,
+            "minValue": 1,
             "maxValue": 24,
             "metadata": {
                 "description": "Number of total cluster nodes (including master node)"
