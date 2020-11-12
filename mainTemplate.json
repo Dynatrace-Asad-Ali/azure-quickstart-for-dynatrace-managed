@@ -182,6 +182,7 @@
         "sizeOfLongTermMetricsDiskInGB": "[parameters('sizeOfLongTermMetricsDiskInGB')]",
         "sizeOfElasticSearchDiskInGB": "[parameters('sizeOfElasticSearchDiskInGB')]",
         "nodeInstanceCount": "[sub(parameters('totalNodeInstanceCount'),1)]",
+        "nodeInstanceBatchSize": "[[if(equals(nodeInstanceCount, 0),0,1)]",
         "masterName": "master",
         "masterNodeResourceId":"[resourceId('Microsoft.Compute/virtualMachines/', variables('masterName'))]",
         "masterNicName": "master-nic",
