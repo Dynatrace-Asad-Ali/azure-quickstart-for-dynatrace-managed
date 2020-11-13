@@ -245,6 +245,20 @@
                             "priority": 200,
                             "direction": "Inbound"
                         }
+                    },
+                    {
+                        "name": "ssh_rule",
+                        "properties": {
+                            "description": "Allow ssh",
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "22",
+                            "sourceAddressPrefix": "Internet",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 260,
+                            "direction": "Inbound"
+                        }
                     }
                 ]
             }
@@ -399,7 +413,7 @@
                     "imageReference": {
                         "publisher": "Canonical",
                         "offer": "UbuntuServer",
-                        "sku": "16.04.0-LTS",
+                        "sku": "18.04-LTS",
                         "version": "latest"
                     },
                     "osDisk": {
@@ -497,7 +511,7 @@
                     "imageReference": {
                         "publisher": "Canonical",
                         "offer": "UbuntuServer",
-                        "sku": "16.04.0-LTS",
+                        "sku": "18.0-LTS",
                         "version": "latest"
                     },
                     "osDisk": {
