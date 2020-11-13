@@ -20,7 +20,7 @@ Make yourself familiar with the [sizing guide](https://www.dynatrace.com/support
   - All nodes provision with a public ip (Making the cluster accessible via the subdomein provided from Dynatrace (<clusterid>.dynatrace-managed.com)
 - Node setup/installation is done via custom script extensions using the scripts within this repo ./custom-scripts/ 
 - Template includes the Azure partner tracking code for Dynatrace (https://docs.microsoft.com/en-us/azure/marketplace/azure-partner-customer-usage-attribution#notify-your-customers)
-- <b>For the parameter "Base uri where the custom script extension scripts are hosted"</b>, use the value https://raw.githubusercontent.com/Dynatrace-Asad-Ali/azure-quickstart-for-dynatrace-managed/master/custom-scripts/
+- <b>For the parameter "Script Host"</b>, use the value https://raw.githubusercontent.com/Dynatrace-Asad-Ali/azure-quickstart-for-dynatrace-managed/master/custom-scripts/
 ## How-To use
 
 See how-to [edit and deploy the template in the Azure Portal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-quickstart-create-templates-use-the-portal#edit-and-deploy-the-template) or how-to [deploy templates via Azure Powershell module or Azure Cli](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#deploy-the-template)
